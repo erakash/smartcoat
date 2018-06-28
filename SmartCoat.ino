@@ -41,7 +41,7 @@ void loop() {
     if (Serial.available() > 0) {
     COMMAND = Serial.readStringUntil('\n');
     if(COMMAND.equals("READ")){
-      Serial.println("BPM:"+String(BPM) + "TMP:"+temp+"ECO2:"+co2+"TVOC:"+tvoc );
+      Serial.print("BPM:"+String(BPM) + "TMP:"+temp+"ECO2:"+co2+"TVOC:"+tvoc );
     }
     else{
       
